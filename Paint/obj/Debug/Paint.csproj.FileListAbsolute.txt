@@ -1,0 +1,11 @@
+C:\Users\stasi\Downloads\Paint-master\Paint-master\Paint\bin\Debug\Paint.exe
+C:\Users\stasi\Downloads\Paint-master\Paint-master\Paint\bin\Debug\Paint.pdb
+C:\Users\stasi\Downloads\Paint-master\Paint-master\Paint\obj\Debug\Paint.csprojAssemblyReference.cache
+C:\Users\stasi\Downloads\Paint-master\Paint-master\Paint\obj\Debug\Paint.NewDialog.resources
+C:\Users\stasi\Downloads\Paint-master\Paint-master\Paint\obj\Debug\Paint.PaintForm.resources
+C:\Users\stasi\Downloads\Paint-master\Paint-master\Paint\obj\Debug\Paint.Properties.Resources.resources
+C:\Users\stasi\Downloads\Paint-master\Paint-master\Paint\obj\Debug\Paint.TextDialog.resources
+C:\Users\stasi\Downloads\Paint-master\Paint-master\Paint\obj\Debug\Paint.csproj.GenerateResource.cache
+C:\Users\stasi\Downloads\Paint-master\Paint-master\Paint\obj\Debug\Paint.csproj.CoreCompileInputs.cache
+C:\Users\stasi\Downloads\Paint-master\Paint-master\Paint\obj\Debug\Paint.exe
+C:\Users\stasi\Downloads\Paint-master\Paint-master\Paint\obj\Debug\Paint.pdb
