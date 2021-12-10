@@ -38,6 +38,8 @@
             this.editCopyMnu = new System.Windows.Forms.MenuItem();
             this.editPasteMnu = new System.Windows.Forms.MenuItem();
             this.imageMnu = new System.Windows.Forms.MenuItem();
+            this.imageRotateRightMenu = new System.Windows.Forms.MenuItem();
+            this.imageRotateLeftMenu = new System.Windows.Forms.MenuItem();
             this.imageClearMnu = new System.Windows.Forms.MenuItem();
             this.helpMnu = new System.Windows.Forms.MenuItem();
             this.helpAboutMnu = new System.Windows.Forms.MenuItem();
@@ -169,12 +171,26 @@
             // 
             this.imageMnu.Index = 2;
             this.imageMnu.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
+            this.imageRotateRightMenu,
+            this.imageRotateLeftMenu,
             this.imageClearMnu});
             this.imageMnu.Text = "Image";
             // 
+            // imageRotateRightMenu
+            // 
+            this.imageRotateRightMenu.Index = 0;
+            this.imageRotateRightMenu.Text = "Rotate Right";
+            this.imageRotateRightMenu.Click += new System.EventHandler(this.imageRotateRightMenu_Click);
+            // 
+            // imageRotateLeftMenu
+            // 
+            this.imageRotateLeftMenu.Index = 1;
+            this.imageRotateLeftMenu.Text = "Rotate Left";
+            this.imageRotateLeftMenu.Click += new System.EventHandler(this.imageRotateLeftMenu_Click);
+            // 
             // imageClearMnu
             // 
-            this.imageClearMnu.Index = 0;
+            this.imageClearMnu.Index = 2;
             this.imageClearMnu.Text = "&Clear";
             this.imageClearMnu.Click += new System.EventHandler(this.imageClearMnu_Click);
             // 
@@ -559,6 +575,8 @@
     private System.Windows.Forms.MenuItem fileExitMnu;
     private System.Windows.Forms.ToolBarButton fillBtn;
     private System.Windows.Forms.ImageList imageList;
-  }
+        private System.Windows.Forms.MenuItem imageRotateLeftMenu;
+        private System.Windows.Forms.MenuItem imageRotateRightMenu;
+    }
 }
 
