@@ -5,32 +5,38 @@ using System.Drawing.Drawing2D;
 
 namespace Paint
 {
-  public enum ClipboardAction
-  {
-    Cut,
-    Copy,
-    Paste
-  }
+    public enum ClipboardAction
+    {
+        Cut,
+        Copy,
+        Paste
+    }
 
-  public enum BrushToolType
-  {
-    Eraser,
-    FreeBrush
-  }
+    public enum BrushToolType
+    {
+        Eraser,
+        FreeBrush
+    }
 
-  public enum DrawMode
-  {
-    Outline,
-    Filled,
-    Mixed,
-    MixedWithSolidOutline
-  }
+    public enum DrawMode
+    {
+        Outline,
+        Filled,
+        Mixed,
+        MixedWithSolidOutline
+    }
 
-  public enum BrushType
-  {
-    SolidBrush,
-    TextureBrush,
-    GradiantBrush,
-    HatchBrush
-  }
+    public enum BrushType
+    {
+        SolidBrush,
+        TextureBrush,
+        GradiantBrush,
+        HatchBrush
+    }
+
+    public enum FilterType
+    {
+        Gray,
+        Sepia
+    }
 }

@@ -103,18 +103,6 @@ namespace Paint
 
         protected virtual void DrawRectangle(Pen outlinePen, Brush fillBrush)
         {
-            if (fillBrush is LinearGradientBrush)
-            {
-                if ((rect.Width > 0) && (rect.Height > 0))
-                {
-                    fillBrush = new LinearGradientBrush(rect,
-                          args.settings.PrimaryColor,
-                          args.settings.SecondaryColor,
-                          args.settings.GradiantStyle);
-                    //outlinePen = new Pen(fillBrush, args.settings.Width);
-                }
-            }
-
             switch (args.settings.DrawMode)
             {
                 case DrawMode.Outline:

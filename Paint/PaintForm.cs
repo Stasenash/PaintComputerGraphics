@@ -60,7 +60,7 @@ namespace Paint
             }
             else if (curButton == filterBtn)
             {
-                curTool = new FilterTool(toolArgs);
+                curTool = new FilterTool(toolArgs, FilterType.Gray);
             }
             else if (curButton == fillBtn)
             {
@@ -94,9 +94,9 @@ namespace Paint
         private void PaintForm_Load(object sender, EventArgs e)
         {
             // fill (fill style) list
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < 2; i++)
             {
-                BrushType bt = (BrushType)i;
+                FilterType bt = (FilterType)i;
                 filterTypeCombo.Items.Add(bt);
             }
             for (int i = 0; i < 53; i++)
@@ -112,24 +112,6 @@ namespace Paint
             for (int i = 15; i <= 60; i += 5)
                 widthCombo.Items.Add(i);
             widthCombo.SelectedIndex = 0;
-
-            // fill Gradiant style list
-            for (int i = 0; i < 4; i++)
-            {
-                LinearGradientMode gm = (LinearGradientMode)i;
-                gradiantStyleCombo.Items.Add(gm);
-            }
-            gradiantStyleCombo.SelectedIndex = 0;
-
-            for (int i = 0; i < 4; i++)
-            {
-                DashStyle ds = (DashStyle)i;
-                lineStyleCombo.Items.Add(ds.ToString());
-            }
-            lineStyleCombo.SelectedIndex = 0;
-
-            // default texture brush image
-            brushImageBox.Image = new Bitmap(20, 20);
 
             // default image
             imageFile = new ImageFile(new Size(500, 500), Color.White);
@@ -149,14 +131,6 @@ namespace Paint
             get
             {
                 return Int32.Parse(widthCombo.Text);
-            }
-        }
-
-        LinearGradientMode IPaintSettings.GradiantStyle
-        {
-            get
-            {
-                return (LinearGradientMode)gradiantStyleCombo.SelectedIndex;
             }
         }
 
@@ -180,20 +154,7 @@ namespace Paint
         {
             get
             {
-                BrushType type;
-                int selIndex = filterTypeCombo.SelectedIndex;
-                switch (selIndex)
-                {
-                    case 0:
-                    case 1:
-                    case 2:
-                        type = (BrushType)selIndex;
-                        break;
-                    default:
-                        type = BrushType.HatchBrush;
-                        break;
-                }
-                return type;
+                return BrushType.SolidBrush;
             }
         }
 
@@ -215,15 +176,7 @@ namespace Paint
         {
             get
             {
-                return (DashStyle)lineStyleCombo.SelectedIndex;
-            }
-        }
-
-        Image IPaintSettings.TextureBrushImage
-        {
-            get
-            {
-                return brushImageBox.Image;
+                return DashStyle.Solid;
             }
         }
 
@@ -251,17 +204,6 @@ namespace Paint
         {
             Graphics.FromImage(imageFile.Bitmap).Clear(Color.White);
             imageBox.Invalidate();
-        }
-
-        private void brushImageBox_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show(imgContainer.DisplayRectangle.ToString());
-            OpenFileDialog openDlg = new OpenFileDialog();
-            openDlg.Filter = "Image Files .BMP .JPG .GIF .Png|*.BMP;*.JPG;*.GIF;*.PNG";
-            if (openDlg.ShowDialog() == DialogResult.OK)
-            {
-                brushImageBox.Image = Image.FromFile(openDlg.FileName);
-            }
         }
 
         private void editCutMnu_Click(object sender, EventArgs e)

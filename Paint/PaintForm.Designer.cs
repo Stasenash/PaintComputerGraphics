@@ -59,17 +59,11 @@
             this.imgContainer = new System.Windows.Forms.Panel();
             this.imageBox = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.brushImageBox = new System.Windows.Forms.PictureBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.lineStyleCombo = new System.Windows.Forms.ComboBox();
             this.inverseLink = new System.Windows.Forms.LinkLabel();
             this.primColorBox = new System.Windows.Forms.PictureBox();
             this.secColorBox = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.gradiantStyleCombo = new System.Windows.Forms.ComboBox();
             this.widthCombo = new System.Windows.Forms.ComboBox();
             this.filterTypeCombo = new System.Windows.Forms.ComboBox();
             this.imageList = new System.Windows.Forms.ImageList(this.components);
@@ -78,7 +72,6 @@
             this.imgContainer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imageBox)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.brushImageBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.primColorBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.secColorBox)).BeginInit();
             this.SuspendLayout();
@@ -241,11 +234,11 @@
             this.eraserBtn});
             this.toolsBar.Dock = System.Windows.Forms.DockStyle.Left;
             this.toolsBar.DropDownArrows = true;
-            this.toolsBar.Location = new System.Drawing.Point(0, 61);
+            this.toolsBar.Location = new System.Drawing.Point(0, 55);
             this.toolsBar.MinimumSize = new System.Drawing.Size(30, 0);
             this.toolsBar.Name = "toolsBar";
             this.toolsBar.ShowToolTips = true;
-            this.toolsBar.Size = new System.Drawing.Size(30, 361);
+            this.toolsBar.Size = new System.Drawing.Size(30, 367);
             this.toolsBar.TabIndex = 2;
             this.toolsBar.ButtonClick += new System.Windows.Forms.ToolBarButtonClickEventHandler(this.toolsBar_ButtonClick);
             // 
@@ -301,9 +294,9 @@
             this.imgContainer.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.imgContainer.Controls.Add(this.imageBox);
             this.imgContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.imgContainer.Location = new System.Drawing.Point(30, 61);
+            this.imgContainer.Location = new System.Drawing.Point(30, 55);
             this.imgContainer.Name = "imgContainer";
-            this.imgContainer.Size = new System.Drawing.Size(709, 361);
+            this.imgContainer.Size = new System.Drawing.Size(709, 367);
             this.imgContainer.TabIndex = 3;
             // 
             // imageBox
@@ -318,62 +311,18 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.brushImageBox);
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.lineStyleCombo);
             this.panel1.Controls.Add(this.inverseLink);
             this.panel1.Controls.Add(this.primColorBox);
             this.panel1.Controls.Add(this.secColorBox);
-            this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.gradiantStyleCombo);
             this.panel1.Controls.Add(this.widthCombo);
             this.panel1.Controls.Add(this.filterTypeCombo);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(739, 61);
+            this.panel1.Size = new System.Drawing.Size(739, 55);
             this.panel1.TabIndex = 4;
-            // 
-            // brushImageBox
-            // 
-            this.brushImageBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.brushImageBox.Location = new System.Drawing.Point(271, 31);
-            this.brushImageBox.Name = "brushImageBox";
-            this.brushImageBox.Size = new System.Drawing.Size(34, 24);
-            this.brushImageBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.brushImageBox.TabIndex = 14;
-            this.brushImageBox.TabStop = false;
-            this.brushImageBox.Click += new System.EventHandler(this.brushImageBox_Click);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(186, 37);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(76, 13);
-            this.label6.TabIndex = 13;
-            this.label6.Text = "Texture Brush:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(3, 37);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(53, 13);
-            this.label5.TabIndex = 12;
-            this.label5.Text = "Line Style";
-            // 
-            // lineStyleCombo
-            // 
-            this.lineStyleCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.lineStyleCombo.FormattingEnabled = true;
-            this.lineStyleCombo.Location = new System.Drawing.Point(59, 34);
-            this.lineStyleCombo.Name = "lineStyleCombo";
-            this.lineStyleCombo.Size = new System.Drawing.Size(121, 21);
-            this.lineStyleCombo.TabIndex = 11;
             // 
             // inverseLink
             // 
@@ -408,19 +357,10 @@
             this.secColorBox.TabStop = false;
             this.secColorBox.Click += new System.EventHandler(this.ColorBox_Click);
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(475, 11);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(76, 13);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Gradiant Style:";
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(366, 11);
+            this.label3.Location = new System.Drawing.Point(186, 11);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(38, 13);
             this.label3.TabIndex = 6;
@@ -435,20 +375,11 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "Filter Type:";
             // 
-            // gradiantStyleCombo
-            // 
-            this.gradiantStyleCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.gradiantStyleCombo.FormattingEnabled = true;
-            this.gradiantStyleCombo.Location = new System.Drawing.Point(560, 8);
-            this.gradiantStyleCombo.Name = "gradiantStyleCombo";
-            this.gradiantStyleCombo.Size = new System.Drawing.Size(121, 21);
-            this.gradiantStyleCombo.TabIndex = 3;
-            // 
             // widthCombo
             // 
             this.widthCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.widthCombo.FormattingEnabled = true;
-            this.widthCombo.Location = new System.Drawing.Point(407, 8);
+            this.widthCombo.Location = new System.Drawing.Point(230, 8);
             this.widthCombo.Name = "widthCombo";
             this.widthCombo.Size = new System.Drawing.Size(62, 21);
             this.widthCombo.TabIndex = 2;
@@ -496,7 +427,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.imageBox)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.brushImageBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.primColorBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.secColorBox)).EndInit();
             this.ResumeLayout(false);
@@ -519,20 +449,14 @@
     private System.Windows.Forms.StatusBarPanel pointPanel2;
     private System.Windows.Forms.MenuItem helpAboutMnu;
     private System.Windows.Forms.Panel panel1;
-    private System.Windows.Forms.ComboBox gradiantStyleCombo;
     private System.Windows.Forms.ComboBox widthCombo;
     private System.Windows.Forms.ComboBox filterTypeCombo;
-    private System.Windows.Forms.Label label4;
     private System.Windows.Forms.Label label3;
     private System.Windows.Forms.Label label1;
     private System.Windows.Forms.PictureBox primColorBox;
     private System.Windows.Forms.PictureBox secColorBox;
     private System.Windows.Forms.LinkLabel inverseLink;
     private System.Windows.Forms.MenuItem imageClearMnu;
-    private System.Windows.Forms.Label label5;
-    private System.Windows.Forms.ComboBox lineStyleCombo;
-    private System.Windows.Forms.Label label6;
-    private System.Windows.Forms.PictureBox brushImageBox;
     private System.Windows.Forms.ToolBarButton arrowBtn;
     private System.Windows.Forms.ToolBarButton lineBtn;
     private System.Windows.Forms.ToolBarButton pencilBtn;

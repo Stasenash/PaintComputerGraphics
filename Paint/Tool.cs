@@ -77,17 +77,6 @@ namespace Paint
                     brush = new SolidBrush(c1);
                     break;
 
-                case BrushType.TextureBrush:
-                    brush = new TextureBrush(args.settings.TextureBrushImage);
-                    break;
-
-                case BrushType.GradiantBrush:
-                    int w = args.settings.Width;
-                    Rectangle tempRect = new Rectangle(0, 0, args.bitmap.Width, args.bitmap.Height);
-                    brush = new LinearGradientBrush(tempRect,
-                        c1, c2, args.settings.GradiantStyle);
-                    break;
-
                 case BrushType.HatchBrush:
                     brush = new HatchBrush(args.settings.HatchStyle, c1, c2);
                     break;

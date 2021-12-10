@@ -7,9 +7,12 @@ namespace Paint
 {
     public class FilterTool : Tool
     {
-        public FilterTool(ToolArgs args)
+        private FilterType toolType;
+
+        public FilterTool(ToolArgs args, FilterType type)
             : base(args)
         {
+            toolType = type;
             args.pictureBox.Cursor = Cursors.Cross;
             args.pictureBox.MouseUp += new MouseEventHandler(OnMouseUp);
             args.pictureBox.MouseMove += new MouseEventHandler(OnMouseMove);

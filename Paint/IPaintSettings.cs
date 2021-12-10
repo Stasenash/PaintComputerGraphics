@@ -17,11 +17,6 @@ namespace Paint
             get;
         }
 
-        LinearGradientMode GradiantStyle
-        {
-            get;
-        }
-
         Color PrimaryColor
         {
             get;
@@ -43,11 +38,6 @@ namespace Paint
         }
 
         DashStyle LineStyle
-        {
-            get;
-        }
-
-        Image TextureBrushImage
         {
             get;
         }
