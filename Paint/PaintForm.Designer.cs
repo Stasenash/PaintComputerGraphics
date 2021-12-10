@@ -54,7 +54,7 @@
             this.ellipseBtn = new System.Windows.Forms.ToolBarButton();
             this.brushBtn = new System.Windows.Forms.ToolBarButton();
             this.fillBtn = new System.Windows.Forms.ToolBarButton();
-            this.textBtn = new System.Windows.Forms.ToolBarButton();
+            this.filterBtn = new System.Windows.Forms.ToolBarButton();
             this.eraserBtn = new System.Windows.Forms.ToolBarButton();
             this.imgContainer = new System.Windows.Forms.Panel();
             this.imageBox = new System.Windows.Forms.PictureBox();
@@ -239,7 +239,7 @@
             this.ellipseBtn,
             this.brushBtn,
             this.fillBtn,
-            this.textBtn,
+            this.filterBtn,
             this.eraserBtn});
             this.toolsBar.Dock = System.Windows.Forms.DockStyle.Left;
             this.toolsBar.DropDownArrows = true;
@@ -287,10 +287,10 @@
             this.fillBtn.ImageIndex = 7;
             this.fillBtn.Name = "fillBtn";
             // 
-            // textBtn
+            // filterBtn
             // 
-            this.textBtn.ImageIndex = 5;
-            this.textBtn.Name = "textBtn";
+            this.filterBtn.ImageIndex = 5;
+            this.filterBtn.Name = "filterBtn";
             // 
             // eraserBtn
             // 
@@ -493,7 +493,8 @@
             this.imageList.Images.SetKeyName(2, "");
             this.imageList.Images.SetKeyName(3, "");
             this.imageList.Images.SetKeyName(4, "");
-            this.imageList.Images.SetKeyName(5, "");
+            this.imageList.Images.SetKeyName(5, "png-transparent-computer-icons-graphic-filter-computer-software-graphy-filter-mis" +
+        "cellaneous-angle-photography.png");
             this.imageList.Images.SetKeyName(6, "");
             this.imageList.Images.SetKeyName(7, "");
             this.imageList.Images.SetKeyName(8, "");
@@ -562,7 +563,7 @@
     private System.Windows.Forms.ToolBarButton rectangleBtn;
     private System.Windows.Forms.ToolBarButton ellipseBtn;
     private System.Windows.Forms.ToolBarButton brushBtn;
-    private System.Windows.Forms.ToolBarButton textBtn;
+    private System.Windows.Forms.ToolBarButton filterBtn;
     private System.Windows.Forms.ToolBarButton eraserBtn;
     private System.Windows.Forms.MenuItem editCutMnu;
     private System.Windows.Forms.MenuItem editCopyMnu;

@@ -58,7 +58,7 @@ namespace Paint
             {
                 curTool = new EllipseTool(toolArgs);
             }
-            else if (curButton == textBtn)
+            else if (curButton == filterBtn)
             {
                 curTool = new FilterTool(toolArgs);
             }
