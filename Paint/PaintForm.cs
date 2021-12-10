@@ -46,7 +46,7 @@ namespace Paint
       } else if (curButton == ellipseBtn) {
         curTool = new EllipseTool(toolArgs);
       } else if (curButton == textBtn) {
-        curTool = new TextTool(toolArgs);
+        curTool = new FilterTool(toolArgs);
       } else if (curButton == fillBtn) {
         curTool = new FillTool(toolArgs);
       } else if (curButton == eraserBtn) {
