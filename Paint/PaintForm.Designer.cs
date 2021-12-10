@@ -33,16 +33,10 @@
             this.fileSaveAsMnu = new System.Windows.Forms.MenuItem();
             this.sep1 = new System.Windows.Forms.MenuItem();
             this.fileExitMnu = new System.Windows.Forms.MenuItem();
-            this.editMnu = new System.Windows.Forms.MenuItem();
-            this.editCutMnu = new System.Windows.Forms.MenuItem();
-            this.editCopyMnu = new System.Windows.Forms.MenuItem();
-            this.editPasteMnu = new System.Windows.Forms.MenuItem();
             this.imageMnu = new System.Windows.Forms.MenuItem();
             this.imageRotateRightMenu = new System.Windows.Forms.MenuItem();
             this.imageRotateLeftMenu = new System.Windows.Forms.MenuItem();
             this.imageClearMnu = new System.Windows.Forms.MenuItem();
-            this.helpMnu = new System.Windows.Forms.MenuItem();
-            this.helpAboutMnu = new System.Windows.Forms.MenuItem();
             this.statusBar = new System.Windows.Forms.StatusBar();
             this.pointPanel1 = new System.Windows.Forms.StatusBarPanel();
             this.pointPanel2 = new System.Windows.Forms.StatusBarPanel();
@@ -80,9 +74,7 @@
             // 
             this.mainMenu.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
             this.fileMnu,
-            this.editMnu,
-            this.imageMnu,
-            this.helpMnu});
+            this.imageMnu});
             // 
             // fileMnu
             // 
@@ -131,36 +123,9 @@
             this.fileExitMnu.Text = "&Exit";
             this.fileExitMnu.Click += new System.EventHandler(this.fileExitMnu_Click);
             // 
-            // editMnu
-            // 
-            this.editMnu.Index = 1;
-            this.editMnu.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
-            this.editCutMnu,
-            this.editCopyMnu,
-            this.editPasteMnu});
-            this.editMnu.Text = "Edit";
-            // 
-            // editCutMnu
-            // 
-            this.editCutMnu.Index = 0;
-            this.editCutMnu.Text = "&Cut";
-            this.editCutMnu.Click += new System.EventHandler(this.editCutMnu_Click);
-            // 
-            // editCopyMnu
-            // 
-            this.editCopyMnu.Index = 1;
-            this.editCopyMnu.Text = "C&opy";
-            this.editCopyMnu.Click += new System.EventHandler(this.editCopyMnu_Click);
-            // 
-            // editPasteMnu
-            // 
-            this.editPasteMnu.Index = 2;
-            this.editPasteMnu.Text = "&Paste";
-            this.editPasteMnu.Click += new System.EventHandler(this.editPasteMnu_Click);
-            // 
             // imageMnu
             // 
-            this.imageMnu.Index = 2;
+            this.imageMnu.Index = 1;
             this.imageMnu.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
             this.imageRotateRightMenu,
             this.imageRotateLeftMenu,
@@ -184,18 +149,6 @@
             this.imageClearMnu.Index = 2;
             this.imageClearMnu.Text = "&Clear";
             this.imageClearMnu.Click += new System.EventHandler(this.imageClearMnu_Click);
-            // 
-            // helpMnu
-            // 
-            this.helpMnu.Index = 3;
-            this.helpMnu.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
-            this.helpAboutMnu});
-            this.helpMnu.Text = "Help";
-            // 
-            // helpAboutMnu
-            // 
-            this.helpAboutMnu.Index = 0;
-            this.helpAboutMnu.Text = "&About...";
             // 
             // statusBar
             // 
@@ -438,16 +391,13 @@
 
     private System.Windows.Forms.MainMenu mainMenu;
     private System.Windows.Forms.MenuItem fileMnu;
-    private System.Windows.Forms.MenuItem editMnu;
     private System.Windows.Forms.MenuItem imageMnu;
-    private System.Windows.Forms.MenuItem helpMnu;
     private System.Windows.Forms.StatusBar statusBar;
     private System.Windows.Forms.ToolBar toolsBar;
     private System.Windows.Forms.Panel imgContainer;
     private System.Windows.Forms.PictureBox imageBox;
     private System.Windows.Forms.StatusBarPanel pointPanel1;
     private System.Windows.Forms.StatusBarPanel pointPanel2;
-    private System.Windows.Forms.MenuItem helpAboutMnu;
     private System.Windows.Forms.Panel panel1;
     private System.Windows.Forms.ComboBox widthCombo;
     private System.Windows.Forms.ComboBox filterTypeCombo;
@@ -465,9 +415,6 @@
     private System.Windows.Forms.ToolBarButton brushBtn;
     private System.Windows.Forms.ToolBarButton filterBtn;
     private System.Windows.Forms.ToolBarButton eraserBtn;
-    private System.Windows.Forms.MenuItem editCutMnu;
-    private System.Windows.Forms.MenuItem editCopyMnu;
-    private System.Windows.Forms.MenuItem editPasteMnu;
     private System.Windows.Forms.MenuItem fileNewMnu;
     private System.Windows.Forms.MenuItem fileOpenMnu;
     private System.Windows.Forms.MenuItem fileSaveMnu;

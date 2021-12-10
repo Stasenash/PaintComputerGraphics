@@ -217,27 +217,6 @@ namespace Paint
             ShowImage();
         }
 
-        private void editCutMnu_Click(object sender, EventArgs e)
-        {
-            curTool.UnloadTool();
-            curTool = new ClipboardTool(toolArgs, ClipboardAction.Cut);
-            SetToolBarButtonsState(arrowBtn);
-        }
-
-        private void editCopyMnu_Click(object sender, EventArgs e)
-        {
-            curTool.UnloadTool();
-            curTool = new ClipboardTool(toolArgs, ClipboardAction.Copy);
-            SetToolBarButtonsState(arrowBtn);
-        }
-
-        private void editPasteMnu_Click(object sender, EventArgs e)
-        {
-            curTool.UnloadTool();
-            curTool = new ClipboardTool(toolArgs, ClipboardAction.Paste);
-            SetToolBarButtonsState(arrowBtn);
-        }
-
         private void fileNewMnu_Click(object sender, EventArgs e)
         {
             NewDialog newDlg = new NewDialog();

@@ -45,7 +45,6 @@
   <ItemGroup>
     <Compile Include="PointerTool.cs" />
     <Compile Include="BrushTool.cs" />
-    <Compile Include="ClipboardTool.cs" />
     <Compile Include="EllipseTool.cs" />
     <Compile Include="Enumerations.cs" />
     <Compile Include="FillTool.cs" />
