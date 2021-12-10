@@ -7,18 +7,20 @@ namespace Paint
 {
     public class ToolArgs
     {
+        public ImageFile imageFile;
         public Bitmap bitmap;
         public PictureBox pictureBox;
         public StatusBarPanel panel1;
         public StatusBarPanel panel2;
         public IPaintSettings settings;
 
-        public ToolArgs(Bitmap bmp, PictureBox picBox, StatusBarPanel p1, StatusBarPanel p2, IPaintSettings settings)
+        public ToolArgs(ImageFile imageFile, Bitmap bitmap, PictureBox pictureBox, StatusBarPanel panel1, StatusBarPanel panel2, IPaintSettings settings)
         {
-            bitmap = bmp;
-            pictureBox = picBox;
-            panel1 = p1;
-            panel2 = p2;
+            this.imageFile = imageFile;
+            this.bitmap = bitmap;
+            this.pictureBox = pictureBox;
+            this.panel1 = panel1;
+            this.panel2 = panel2;
             this.settings = settings;
         }
     }

@@ -60,7 +60,7 @@ namespace Paint
             }
             else if (curButton == filterBtn)
             {
-                curTool = new FilterTool(toolArgs, FilterType.Gray);
+                curTool = new FilterTool(toolArgs, (FilterType) filterTypeCombo.SelectedIndex);
             }
             else if (curButton == fillBtn)
             {
@@ -294,7 +294,7 @@ namespace Paint
 
             imageBox.ClientSize = imageFile.Bitmap.Size;
             imageBox.Invalidate();
-            toolArgs = new ToolArgs(imageFile.Bitmap, imageBox, pointPanel1, pointPanel2, settings);
+            toolArgs = new ToolArgs(imageFile, imageFile.Bitmap, imageBox, pointPanel1, pointPanel2, settings);
 
             if (curTool != null)
                 curTool.UnloadTool();

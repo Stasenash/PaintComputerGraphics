@@ -26,7 +26,44 @@ namespace Paint
 
         private void OnMouseUp(object sender, MouseEventArgs e)
         {
-            MessageBox.Show("I'm your new tool!");
+            Bitmap image = args.imageFile.Bitmap;
+
+            if (toolType == FilterType.Gray)
+            {
+                byte Grey;
+                Color PixelColor;                
+                for (int i = 0; i < image.Height; i++)
+                {
+                    for (int j = 0; j < image.Width; j++)
+                    {
+                        PixelColor = image.GetPixel(j, i);
+                        Grey = (byte)(PixelColor.R * 0.3 + PixelColor.G * 0.59 + PixelColor.B * 0.11);
+                        image.SetPixel(j, i, Color.FromArgb(Grey, Grey, Grey));
+                    }
+                }                
+            }
+            else if (toolType == FilterType.Sepia)
+            {
+                int outputRed, outputGreen, outputBlue;
+                Color PixelColor;
+                for (int i = 0; i < image.Height; i++)
+                {
+                    for (int j = 0; j < image.Width; j++)
+                    {
+                        PixelColor = image.GetPixel(j, i);
+                        outputRed = (int)((PixelColor.R * 0.393) + (PixelColor.G * 0.769) + (PixelColor.B * 0.189));
+                        outputGreen = (int)((PixelColor.R * 0.349) + (PixelColor.G * 0.686) + (PixelColor.B * 0.168));
+                        outputBlue = (int)((PixelColor.R * 0.272) + (PixelColor.G * 0.534) + (PixelColor.B * 0.131));
+                        if (outputRed > 255) outputRed = 255;
+                        if (outputGreen > 255) outputGreen = 255;
+                        if (outputBlue > 255) outputBlue = 255;
+                        image.SetPixel(j, i, Color.FromArgb(outputRed, outputGreen, outputBlue));
+                    }
+                }
+            }
+
+            args.pictureBox.Image = new Bitmap(image);
+            args.pictureBox.Invalidate();
         }
 
         public override void UnloadTool()

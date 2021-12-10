@@ -15,7 +15,6 @@ C:\Users\stasi\Desktop\PaintComputerGraphics\Paint\obj\Debug\Paint.csprojAssembl
 C:\Users\stasi\Desktop\PaintComputerGraphics\Paint\obj\Debug\Paint.NewDialog.resources
 C:\Users\stasi\Desktop\PaintComputerGraphics\Paint\obj\Debug\Paint.PaintForm.resources
 C:\Users\stasi\Desktop\PaintComputerGraphics\Paint\obj\Debug\Paint.Properties.Resources.resources
-C:\Users\stasi\Desktop\PaintComputerGraphics\Paint\obj\Debug\Paint.TextDialog.resources
 C:\Users\stasi\Desktop\PaintComputerGraphics\Paint\obj\Debug\Paint.csproj.GenerateResource.cache
 C:\Users\stasi\Desktop\PaintComputerGraphics\Paint\obj\Debug\Paint.csproj.CoreCompileInputs.cache
 C:\Users\stasi\Desktop\PaintComputerGraphics\Paint\obj\Debug\Paint.exe
