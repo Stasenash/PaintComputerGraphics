@@ -68,12 +68,10 @@
             this.secColorBox = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.gradiantStyleCombo = new System.Windows.Forms.ComboBox();
             this.widthCombo = new System.Windows.Forms.ComboBox();
-            this.shapeStyleCombo = new System.Windows.Forms.ComboBox();
-            this.fillStyleCombo = new System.Windows.Forms.ComboBox();
+            this.filterTypeCombo = new System.Windows.Forms.ComboBox();
             this.imageList = new System.Windows.Forms.ImageList(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pointPanel1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pointPanel2)).BeginInit();
@@ -329,12 +327,10 @@
             this.panel1.Controls.Add(this.secColorBox);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.gradiantStyleCombo);
             this.panel1.Controls.Add(this.widthCombo);
-            this.panel1.Controls.Add(this.shapeStyleCombo);
-            this.panel1.Controls.Add(this.fillStyleCombo);
+            this.panel1.Controls.Add(this.filterTypeCombo);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -430,23 +426,14 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "Width:";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(186, 11);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(67, 13);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Shape Style:";
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(3, 11);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(48, 13);
+            this.label1.Size = new System.Drawing.Size(59, 13);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Fill Style:";
+            this.label1.Text = "Filter Type:";
             // 
             // gradiantStyleCombo
             // 
@@ -466,23 +453,14 @@
             this.widthCombo.Size = new System.Drawing.Size(62, 21);
             this.widthCombo.TabIndex = 2;
             // 
-            // shapeStyleCombo
+            // filterTypeCombo
             // 
-            this.shapeStyleCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.shapeStyleCombo.FormattingEnabled = true;
-            this.shapeStyleCombo.Location = new System.Drawing.Point(260, 8);
-            this.shapeStyleCombo.Name = "shapeStyleCombo";
-            this.shapeStyleCombo.Size = new System.Drawing.Size(100, 21);
-            this.shapeStyleCombo.TabIndex = 1;
-            // 
-            // fillStyleCombo
-            // 
-            this.fillStyleCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.fillStyleCombo.FormattingEnabled = true;
-            this.fillStyleCombo.Location = new System.Drawing.Point(59, 8);
-            this.fillStyleCombo.Name = "fillStyleCombo";
-            this.fillStyleCombo.Size = new System.Drawing.Size(121, 21);
-            this.fillStyleCombo.TabIndex = 0;
+            this.filterTypeCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.filterTypeCombo.FormattingEnabled = true;
+            this.filterTypeCombo.Location = new System.Drawing.Point(59, 8);
+            this.filterTypeCombo.Name = "filterTypeCombo";
+            this.filterTypeCombo.Size = new System.Drawing.Size(121, 21);
+            this.filterTypeCombo.TabIndex = 0;
             // 
             // imageList
             // 
@@ -543,11 +521,9 @@
     private System.Windows.Forms.Panel panel1;
     private System.Windows.Forms.ComboBox gradiantStyleCombo;
     private System.Windows.Forms.ComboBox widthCombo;
-    private System.Windows.Forms.ComboBox shapeStyleCombo;
-    private System.Windows.Forms.ComboBox fillStyleCombo;
+    private System.Windows.Forms.ComboBox filterTypeCombo;
     private System.Windows.Forms.Label label4;
     private System.Windows.Forms.Label label3;
-    private System.Windows.Forms.Label label2;
     private System.Windows.Forms.Label label1;
     private System.Windows.Forms.PictureBox primColorBox;
     private System.Windows.Forms.PictureBox secColorBox;

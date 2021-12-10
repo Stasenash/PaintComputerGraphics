@@ -97,22 +97,14 @@ namespace Paint
             for (int i = 0; i < 3; i++)
             {
                 BrushType bt = (BrushType)i;
-                fillStyleCombo.Items.Add(bt);
+                filterTypeCombo.Items.Add(bt);
             }
             for (int i = 0; i < 53; i++)
             {
                 HatchStyle hs = (HatchStyle)i;
-                fillStyleCombo.Items.Add(hs);
+                filterTypeCombo.Items.Add(hs);
             }
-            fillStyleCombo.SelectedIndex = 0;
-
-            // fill shape style list
-            for (int i = 0; i < 4; i++)
-            {
-                DrawMode ss = (DrawMode)i;
-                shapeStyleCombo.Items.Add(ss);
-            }
-            shapeStyleCombo.SelectedIndex = 0;
+            filterTypeCombo.SelectedIndex = 0;
 
             // fill Width list
             for (int i = 1; i < 11; i++)
@@ -148,7 +140,7 @@ namespace Paint
         {
             get
             {
-                return (DrawMode)shapeStyleCombo.SelectedIndex;
+                return DrawMode.Outline;
             }
         }
 
@@ -189,7 +181,7 @@ namespace Paint
             get
             {
                 BrushType type;
-                int selIndex = fillStyleCombo.SelectedIndex;
+                int selIndex = filterTypeCombo.SelectedIndex;
                 switch (selIndex)
                 {
                     case 0:
@@ -209,7 +201,7 @@ namespace Paint
         {
             get
             {
-                int index = fillStyleCombo.SelectedIndex;
+                int index = filterTypeCombo.SelectedIndex;
                 if (index < 3)
                     index = 0;
                 else
