@@ -205,7 +205,7 @@
             this.pointPanel1,
             this.pointPanel2});
             this.statusBar.ShowPanels = true;
-            this.statusBar.Size = new System.Drawing.Size(739, 22);
+            this.statusBar.Size = new System.Drawing.Size(405, 22);
             this.statusBar.TabIndex = 1;
             // 
             // pointPanel1
@@ -296,7 +296,7 @@
             this.imgContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.imgContainer.Location = new System.Drawing.Point(30, 55);
             this.imgContainer.Name = "imgContainer";
-            this.imgContainer.Size = new System.Drawing.Size(709, 367);
+            this.imgContainer.Size = new System.Drawing.Size(375, 367);
             this.imgContainer.TabIndex = 3;
             // 
             // imageBox
@@ -321,13 +321,13 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(739, 55);
+            this.panel1.Size = new System.Drawing.Size(405, 55);
             this.panel1.TabIndex = 4;
             // 
             // inverseLink
             // 
             this.inverseLink.AutoSize = true;
-            this.inverseLink.Location = new System.Drawing.Point(690, 37);
+            this.inverseLink.Location = new System.Drawing.Point(313, 37);
             this.inverseLink.Name = "inverseLink";
             this.inverseLink.Size = new System.Drawing.Size(42, 13);
             this.inverseLink.TabIndex = 10;
@@ -339,7 +339,7 @@
             // 
             this.primColorBox.BackColor = System.Drawing.Color.DodgerBlue;
             this.primColorBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.primColorBox.Location = new System.Drawing.Point(702, 9);
+            this.primColorBox.Location = new System.Drawing.Point(325, 9);
             this.primColorBox.Name = "primColorBox";
             this.primColorBox.Size = new System.Drawing.Size(25, 24);
             this.primColorBox.TabIndex = 9;
@@ -350,7 +350,7 @@
             // 
             this.secColorBox.BackColor = System.Drawing.Color.White;
             this.secColorBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.secColorBox.Location = new System.Drawing.Point(693, 3);
+            this.secColorBox.Location = new System.Drawing.Point(316, 3);
             this.secColorBox.Name = "secColorBox";
             this.secColorBox.Size = new System.Drawing.Size(25, 24);
             this.secColorBox.TabIndex = 8;
@@ -360,7 +360,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(186, 11);
+            this.label3.Location = new System.Drawing.Point(193, 11);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(38, 13);
             this.label3.TabIndex = 6;
@@ -379,7 +379,7 @@
             // 
             this.widthCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.widthCombo.FormattingEnabled = true;
-            this.widthCombo.Location = new System.Drawing.Point(230, 8);
+            this.widthCombo.Location = new System.Drawing.Point(237, 8);
             this.widthCombo.Name = "widthCombo";
             this.widthCombo.Size = new System.Drawing.Size(62, 21);
             this.widthCombo.TabIndex = 2;
@@ -388,7 +388,7 @@
             // 
             this.filterTypeCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.filterTypeCombo.FormattingEnabled = true;
-            this.filterTypeCombo.Location = new System.Drawing.Point(59, 8);
+            this.filterTypeCombo.Location = new System.Drawing.Point(66, 8);
             this.filterTypeCombo.Name = "filterTypeCombo";
             this.filterTypeCombo.Size = new System.Drawing.Size(121, 21);
             this.filterTypeCombo.TabIndex = 0;
@@ -412,7 +412,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(739, 444);
+            this.ClientSize = new System.Drawing.Size(405, 444);
             this.Controls.Add(this.imgContainer);
             this.Controls.Add(this.toolsBar);
             this.Controls.Add(this.statusBar);

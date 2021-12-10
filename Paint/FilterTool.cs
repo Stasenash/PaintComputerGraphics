@@ -9,8 +9,7 @@ namespace Paint
     {
         private FilterType toolType;
 
-        public FilterTool(ToolArgs args, FilterType type)
-            : base(args)
+        public FilterTool(ToolArgs args, FilterType type) : base(args)
         {
             toolType = type;
             args.pictureBox.Cursor = Cursors.Cross;
@@ -62,7 +61,7 @@ namespace Paint
                 }
             }
 
-            args.pictureBox.Image = new Bitmap(image);
+            args.pictureBox.Image = image;
             args.pictureBox.Invalidate();
         }
 

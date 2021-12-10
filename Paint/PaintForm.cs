@@ -84,11 +84,14 @@ namespace Paint
 
         private void imageBox_Paint(object sender, PaintEventArgs e)
         {
-            //e.Graphics.DrawImageUnscaledAndClipped(imageFile.Bitmap, new Rectangle(new Point(0,0),imageFile.Bitmap.Size));
             Rectangle clipRect = e.ClipRectangle;
             Bitmap b = toolArgs.bitmap.Clone(clipRect, toolArgs.bitmap.PixelFormat);
             e.Graphics.DrawImageUnscaledAndClipped(b, clipRect);
             b.Dispose();
+
+            //Rectangle clipRect = e.ClipRectangle;
+            //Bitmap bm = toolArgs.bitmap;
+            //e.Graphics.DrawImageUnscaledAndClipped(bm, clipRect);
         }
 
         private void PaintForm_Load(object sender, EventArgs e)
@@ -98,11 +101,6 @@ namespace Paint
             {
                 FilterType bt = (FilterType)i;
                 filterTypeCombo.Items.Add(bt);
-            }
-            for (int i = 0; i < 53; i++)
-            {
-                HatchStyle hs = (HatchStyle)i;
-                filterTypeCombo.Items.Add(hs);
             }
             filterTypeCombo.SelectedIndex = 0;
 

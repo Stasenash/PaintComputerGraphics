@@ -12,6 +12,7 @@ namespace Paint
         public ImageFile(Size size, Color backColor)
         {
             fileName = null;
+            bitmap?.Dispose();
             bitmap = new Bitmap(size.Width, size.Height, System.Drawing.Imaging.PixelFormat.Format32bppRgb);
 
             // fill by background color
@@ -29,8 +30,16 @@ namespace Paint
         {
             try
             {
-                //bitmap = (Bitmap)Image.FromFile(file);
-                bitmap = new Bitmap(file);
+                bitmap?.Dispose();
+
+                Bitmap tempBitmap = new Bitmap(file, true);
+                bitmap = new Bitmap(tempBitmap.Width, tempBitmap.Height);
+                using (Graphics g = Graphics.FromImage(bitmap))
+                {
+                    g.DrawImage(tempBitmap, 0, 0);
+                }
+                tempBitmap.Dispose();
+
                 fileName = file;
                 return true;
             }
