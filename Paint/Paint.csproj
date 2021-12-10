@@ -60,12 +60,6 @@
     <Compile Include="PencilTool.cs" />
     <Compile Include="RectangleTool.cs" />
     <Compile Include="RectangleToolBase.cs" />
-    <Compile Include="TextDialog.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TextDialog.Designer.cs">
-      <DependentUpon>TextDialog.cs</DependentUpon>
-    </Compile>
     <Compile Include="FilterTool.cs" />
     <Compile Include="ToolArgs.cs" />
     <Compile Include="PaintForm.cs">
@@ -88,10 +82,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TextDialog.resx">
-      <SubType>Designer</SubType>
-      <DependentUpon>TextDialog.cs</DependentUpon>
     </EmbeddedResource>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
