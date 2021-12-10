@@ -18,7 +18,6 @@ namespace Paint
         private ToolArgs toolArgs;
         private Tool curTool;
         private IPaintSettings settings;
-        private ImageList toolBarImageList;
 
         public PaintForm()
         {
@@ -38,7 +37,7 @@ namespace Paint
             {
                 curTool = new PointerTool(toolArgs);
             }
-            if (curButton == lineBtn)
+            else if (curButton == lineBtn)
             {
                 curTool = new LineTool(toolArgs);
             }
@@ -92,6 +91,20 @@ namespace Paint
             //Rectangle clipRect = e.ClipRectangle;
             //Bitmap bm = toolArgs.bitmap;
             //e.Graphics.DrawImageUnscaledAndClipped(bm, clipRect);
+        }
+
+        private void imageRotateRightMenu_Click(object sender, EventArgs e)
+        {
+            toolsBar_ButtonClick(null, new ToolBarButtonClickEventArgs(toolsBar.Buttons[0]));
+            imageFile.Bitmap.RotateFlip(RotateFlipType.Rotate90FlipNone);
+            ShowImage();
+        }
+
+        private void imageRotateLeftMenu_Click(object sender, EventArgs e)
+        {
+            toolsBar_ButtonClick(null, new ToolBarButtonClickEventArgs(toolsBar.Buttons[0]));
+            imageFile.Bitmap.RotateFlip(RotateFlipType.Rotate270FlipNone);
+            ShowImage();
         }
 
         private void PaintForm_Load(object sender, EventArgs e)
@@ -201,7 +214,7 @@ namespace Paint
         private void imageClearMnu_Click(object sender, EventArgs e)
         {
             Graphics.FromImage(imageFile.Bitmap).Clear(Color.White);
-            imageBox.Invalidate();
+            ShowImage();
         }
 
         private void editCutMnu_Click(object sender, EventArgs e)
@@ -298,18 +311,6 @@ namespace Paint
                 curTool.UnloadTool();
             curTool = new PointerTool(toolArgs);
             SetToolBarButtonsState(arrowBtn);
-        }
-
-        private void imageRotateRightMenu_Click(object sender, EventArgs e)
-        {
-            imageFile.Bitmap.RotateFlip(RotateFlipType.Rotate90FlipNone);
-            imageBox.Invalidate();
-        }
-
-        private void imageRotateLeftMenu_Click(object sender, EventArgs e)
-        {
-            imageFile.Bitmap.RotateFlip(RotateFlipType.Rotate270FlipNone);
-            imageBox.Invalidate();
         }
     }
 }

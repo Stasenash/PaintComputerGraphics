@@ -13,8 +13,7 @@ namespace Paint
         private int pixelSize;
         private BitmapData bData;
 
-        public FillTool(ToolArgs args)
-          : base(args)
+        public FillTool(ToolArgs args) : base(args)
         {
             args.pictureBox.Cursor = Cursors.Cross;
             args.pictureBox.MouseClick += new MouseEventHandler(OnMouseClick);
